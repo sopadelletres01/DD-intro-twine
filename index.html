@@ -89,6 +89,9 @@ sound.effect.kvothe_final.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/up
 
 sound.ambient.music.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665161441/DungeonsDragonsMedia/far-horizons-skyrim_pji4rc.mp3&#39;
 
+sound.ambient.combat.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665163236/DungeonsDragonsMedia/combat_nwkxuj.mp4&#39;
+
+sound.ambient.end.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665163825/end_qr3nq4.mp3&#39;
 
 --
 
@@ -164,10 +167,15 @@ Al girar una esquina corriendo te chocas de frente con un escuadrón de guardias
 
 El choque en tu frente contra la armadura de placa del señor que iba  primero, produce tal vibración en tu cráneo que te desplomas desmayado.
 
-[[Siguiente...-&gt;Kvothe-End]]</tw-passagedata><tw-passagedata pid="7" name="Kvothe-2-R-L" tags="" position="750,950" size="100,100">[JavaScript]
+[[Siguiente...-&gt;Kvothe-End]]</tw-passagedata><tw-passagedata pid="7" name="Kvothe-2-R-L" tags="" position="750,950" size="100,100">sound.ambient.music.playing:false
+
+--
+
+[JavaScript]
 stopAllEffects()
 [continued]
 
+{ambient sound: &#39;combat&#39;, volume:0.5}
 
 {sound effect: &#39;kvothe_b1&#39;}
 Justo cuando te envalentonas enfurecido hacia la muchedumbre, aparecen dos guardias de los lados y dos más en tu flanco.
@@ -216,10 +224,17 @@ stopAllEffects()
 {sound effect: &#39;kvothe_b11&#39;}
 A la mínima que intentas escapar, uno de los soldados te da tal sopapo con el antebrazo de placa que de la ostia en la frente te ha dejado inconsciente en el suelo.
 
-[[Siguiente...-&gt;Kvothe-End]]</tw-passagedata><tw-passagedata pid="11" name="Kvothe-End" tags="" position="675,1625" size="100,100">[JavaScript]
+[[Siguiente...-&gt;Kvothe-End]]</tw-passagedata><tw-passagedata pid="11" name="Kvothe-End" tags="" position="675,1625" size="100,100">sound.ambient.combat.playing:false
+sound.ambient.ambient.playing:false
+
+--
+
+
+[JavaScript]
 stopAllEffects()
 [continued]
 
+{ambient sound: &#39;end&#39;, volume:&#39;0.7&#39;}
 
 {sound effect: &#39;kvothe_end&#39;}
 Ahora, inconsciente, y sin nada que poder hacer ante tal situación, eres arrestado mientras sueñas con las estrellas.
