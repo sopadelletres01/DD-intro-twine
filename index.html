@@ -33,13 +33,34 @@
             repeatCount="indefinite"
         />
 	</line>
-</svg></div></div></div></form><tw-storydata name="D&amp;D Intro" startnode="1" creator="Twine" creator-version="2.5.1" format="Chapbook" format-version="1.2.2" ifid="9293BD5E-7DAD-4FA3-901B-FAF7E3AA09C2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">window.addEventListener("load",()=>{
+</svg></div></div></div></form><tw-storydata name="D&amp;D Intro" startnode="1" creator="Twine" creator-version="2.5.1" format="Chapbook" format-version="1.2.2" ifid="9293BD5E-7DAD-4FA3-901B-FAF7E3AA09C2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#reset_cache{
+ 	position:absolute;
+  	right:10px;
+  	top:10px;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.addEventListener("load",()=>{
   window.stopAllEffects = function(){
-	Object.entries(sound.effect).forEach(([key,value])=>{
-    sound.effect[key].playing=false;
+    Object.entries(sound.effect).forEach(([key,value])=>{
+      sound.effect[key].playing=false;
     })
-}
-
+  }
+  
+  window.resetCache = function(){
+  	localStorage.clear()
+    location.reload()
+  }
+ 
+  const button = document.createElement("button")
+  const page = document.getElementById("page")
+  
+  button.innerHTML = "Reset Cache"
+  button.id = "reset_cache"
+  
+  page.appendChild(button)
+  
+  button.addEventListener("click",()=>{
+    window.resetCache()
+  })
+  
 })
 
 </script><tw-tag name="Repe" color="red"></tw-tag><tw-tag name="Audio-Repe" color="yellow"></tw-tag><tw-passagedata pid="1" name="Elige Personaje" tags="" position="675,250" size="100,100">sound.effect.kvothe_intro.url: &#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665011862/DungeonsDragonsMedia/WhatsApp_Audio_2022-10-05_at_22.51.43_rr82f7.mp3&#39;
@@ -59,7 +80,6 @@ sound.effect.kvothe_b2.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/uploa
 sound.effect.kvothe_b11.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665153107/DungeonsDragonsMedia/Kvothe_B_1_1_zlezet.mp3&#39;
 
 sound.effect.kvothe_b12.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665153211/DungeonsDragonsMedia/Kvothe_B_1_2_bjwb40.mp3&#39;
-
 
 sound.effect.kvothe_end.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1665152741/DungeonsDragonsMedia/Kvothe_End_o5wktg.mp3&#39;
 
