@@ -33,7 +33,7 @@
             repeatCount="indefinite"
         />
 	</line>
-</svg></div></div></div></form><tw-storydata name="D&amp;D Intro" startnode="1" creator="Twine" creator-version="2.5.1" format="Chapbook" format-version="1.2.2" ifid="9293BD5E-7DAD-4FA3-901B-FAF7E3AA09C2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#reset_cache{
+</svg></div></div></div></form><tw-storydata name="D&amp;D Intro" startnode="1" creator="Twine" creator-version="2.5.1" format="Chapbook" format-version="1.2.2" ifid="9293BD5E-7DAD-4FA3-901B-FAF7E3AA09C2" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#reset_cache{
  	position:absolute;
   	right: 75px;
   	top:10px;
@@ -90,7 +90,7 @@ sound.ambient.end.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v16
 kvothe_secret:&#39;kvothe&#39;
 roderick_secret:&#39;roderick&#39;
 breoth_secret:&#39;breoth&#39;
-
+rafer_secret:&#39;rafer&#39;
 --
 
 {ambient sound: &#39;music&#39;, volume:0.5}
@@ -104,7 +104,7 @@ Elige uno de los siguientes personajes:
 
 * [[Breoth-&gt;Breoth Password]]
 
-* PJ4</tw-passagedata><tw-passagedata pid="2" name="Kvothe" tags="" position="500,750" size="200,200">
+* [[Rafer-&gt;Rafer Password]]</tw-passagedata><tw-passagedata pid="2" name="Kvothe" tags="" position="500,750" size="200,200">
 {sound effect: &#39;kvothe_intro&#39;}
 
 Tú, Kvothe, notas una cálida aunque dolorosa sensación en el pecho, seguramente sea porque aún residen en ti los efectos del Pacto que acabas de hacer, que sólamente un insensato haría, y aún siendo consciente de ello, no te acobardas ante los hechos.
@@ -812,6 +812,259 @@ stopAllEffects()
 
 
 {sound effect: &#39;breoth_final&#39;}
+
+&lt;h1&gt;Fin del Prólogo&lt;/h1&gt;
+
+Esa última frase consigue estremecer todo tu cuerpo, mientras lentamente caes por el cansancio, cerrando así los ojos a la espera de tu trágico e inexorable destino.</tw-passagedata><tw-passagedata pid="48" name="Rafer Password" tags="" position="3850,250" size="100,100">sound.effect.rafer_intro.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892430/DungeonsDragonsMedia/Rafer/Rafer_Intro_yk1gcc.mp3&#39;
+
+sound.effect.rafer_a.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666558268/DungeonsDragonsMedia/Rafer/Rafer_A_bgxkwj.mp3&#39;
+
+sound.effect.rafer_anext.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892429/DungeonsDragonsMedia/Rafer/Rafer_A_Next_zd19bg.mp3&#39;
+
+sound.effect.rafer_b.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666558280/DungeonsDragonsMedia/Rafer/Rafer_B_j4o2de.mp3&#39;
+
+sound.effect.rafer_c.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666558281/DungeonsDragonsMedia/Rafer/Rafer_C_m9wcvd.mp3&#39;
+
+sound.effect.rafer_b1.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666558283/DungeonsDragonsMedia/Rafer/Rafer_B_1_ldqkpj.mp3&#39;
+
+sound.effect.rafer_b11.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892429/DungeonsDragonsMedia/Rafer/Rafer_B_1_1_hkz00e.mp3&#39;
+
+sound.effect.rafer_b13.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892430/DungeonsDragonsMedia/Rafer/Rafer_B_1_3_alpr5k.mp3&#39;
+
+sound.effect.rafer_b2.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892430/DungeonsDragonsMedia/Rafer/Rafer_B_2_cizbe1.mp3&#39;
+
+sound.effect.rafer_cnext.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892429/DungeonsDragonsMedia/Rafer/Rafer_C_Next_zwcmyi.mp3&#39;
+
+sound.effect.rafer_end.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892430/DungeonsDragonsMedia/Rafer/Rafer_End_ezkbqq.mp3&#39;
+
+sound.effect.rafer_final.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1666892429/DungeonsDragonsMedia/Rafer/Rafer_Final_dabspz.mp3&#39;
+--
+
+&lt;h2&gt;Introduce la contraseña para acceder a Rafer&lt;/h2&gt;
+
+{text input for: &#39;rafer_pass&#39;}
+
+
+[[Empieza la aventura-&gt;Password Validator Rafer]]</tw-passagedata><tw-passagedata pid="49" name="Password Validator Rafer" tags="" position="4075,550" size="100,100">
+[if rafer_pass === rafer_secret]
+
+[after 2 second]
+{embed passage: &#39;Rafer&#39;}
+[continued]
+
+[else]
+
+Contraseña incorrecta vuelve a intentar...
+
+[[Volver-&gt;Rafer Password]]
+</tw-passagedata><tw-passagedata pid="50" name="Rafer" tags="" position="4100,825" size="100,100">{sound effect: &#39;rafer_intro&#39;}
+
+Tú, Rafer el Grande, tienes el objetivo de convertirte en el luchador más fuerte jamás habido y por haber, sólo te importa la sensación frenética de la lucha y su consecuente victoria de ella. Has recorrido, no en balde, numerosos parajes tanto terrestres como acuáticos. Tu viaje inició hace ya años en tu pablado natal, al lado de una de las ciudades dracónidas más importantes, también reconocida como la capital dracónida, Uruk&#39;dhar. Pero actualmente te encuentras muy lejos de tu hogar, escuchaste acerca de los valerosos caballeros del Reino del Sur. Una especie de humanos implacables con lo que se proponen. Tu misión era enfrentarte a quienquiera que fuese el caballero más valeroso de entre todos ellos. 
+
+Sin embargo tus viajes son arduos y complejos, no siempre puedes tomar la decisión que más desearías, por lo que actualmente te encuentras en una villa perdida de la mano de los Dioses, en el continente de Los Dominios del Sur.
+
+Te encuentras acechando en el bosque colindante a la villa, donde observas un escuadrón de cuatro guardias que patrullan el camino del bosque.
+Parecen encontrarse algo apartados de la civilización, ya que al ser de noche el camino se encuentra completamente vacío y oscurecido por la sombría noche. 
+
+**¿Qué decides hacer?**
+
+[[Atacarles aprovechando la ventaja de la emboscada, evidentemente cuatro soldados de pacotilla no tienen posibilidad alguna contra ti, Rafer el Grande.-&gt;Rafer-A]]
+
+[[Ir a preguntarles cordial y amablemente si conocen de algún sitio dónde poder batir y demostrar la habilidad en combate.-&gt;Rafer-B]]
+
+[[Irse sin más, a encontrar algún desafío de mayor calibre.-&gt;Rafer-C]]</tw-passagedata><tw-passagedata pid="51" name="Rafer-A" tags="" position="3800,975" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_a&#39;}
+
+
+Inicias la emboscada hábilmente, pillandoles desprevenidos, pero rápidamente los soldados se colocan en formación dispuestos a contrarrestar tu ataque. 
+
+Tu fuerza bruta golpea implacablemente contra sus escudos, dos de los soldados caen hacia atrás mientras los otros dos les ayudan a reincorporarse. Poco a poco van resistiendo mejor tus ataques sin apenas contraatacar. En el momento en que empiezas a flaquear de estamina por golpear tantas repetidas veces en su armadura es cuando los soldados aprovechan para molerte a palos e intentar reducirte. 
+
+Te resistes con todas tus fuerzas, y cuando dos de ellos intentan sujetarte les mandas volando por los aires, pero de algún lado recibes un fuerte golpe en la cabeza que te hace perder el conocimiento por unos instantes. El tiempo suficiente para maniatarte y dejarte bajo arresto. 
+
+Cuando los soldados se recuperan de la paliza que les has dado, uno recupera aire y te dice que irás directo al calabozo como el animal que eres.
+
+[[Siguiente...-&gt;Rafer-A-Next]]
+</tw-passagedata><tw-passagedata pid="52" name="Rafer-B" tags="" position="4150,975" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_b&#39;}
+
+
+Al acercarte los soldados desenvainan sus espadas, pero al ver que no pareces agresivo se tranquilizan, aún con las armas en la mano. Después de introducirte y preguntarles por algún sitio dónde pelear te contesta que en cualquier taberna puedes encontrar pelea y que les harías un favor cargándote algún que otro borracho problemático, pero que si de verdad quieres un combate real, dicen que en La Liga de Aventureros se celebra anualmente el mayor torneo de combates que los Reinos del Sur haya conocido. 
+
+Pero éste sólo se encuentra disponible para miembros oficiales de la propia liga de aventureros. 
+
+**Te preguntan si tienes alguna duda más.**
+
+
+[[Les preguntas cómo entrar en la Liga de Aventureros para poder pelear.-&gt;Rafer-B-1]]
+
+
+[[Te cansas de tanta cháchara y decides intentar cargártelos, aunque sólo sea para divertirte un rato.-&gt;Rafer-B-2]]
+
+
+
+
+</tw-passagedata><tw-passagedata pid="53" name="Rafer-C" tags="" position="4450,950" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_c&#39;}
+
+
+Los soldados no te miraban ya con buenos ojos, pero con éste disrespect de dejarles con la palabra en la boca se cabrean un poco bastante y deciden atacarte por insubordinación.
+
+Desenvainan sus espadas, pero tu experiencia te permite anticiparte a sus primera acciones, así que inicias la pelea hábilmente, pillandoles desprevenidos, pero rápidamente los soldados se colocan en formación dispuestos a contrarrestar tu ataque. Tu fuerza bruta golpea implacablemente contra sus escudos, dos de los soldados caen hacia atrás mientras los otros dos les ayudan a reincorporarse. 
+
+Poco a poco van resistiendo mejor tus ataques sin apenas contraatacar. En el momento en que empiezas a flaquear de estamina por golpear tantas repetidas veces en su armadura es cuando los soldados aprovechan para molerte a palos e intentar reducirte. Te resistes con todas tus fuerzas, y cuando dos de ellos intentan sujetarte les mandas volando por los aires, pero de algún lado recibes un fuerte golpe en la cabeza que te hace perder el conocimiento por unos instantes. El tiempo suficiente para maniatarte y dejarte bajo arresto. 
+
+Cuando los soldados se recuperan de la paliza que les has dado, uno recupera aire y te dice que irás directo al calabozo como el animal que eres.
+
+
+**¿Qué decides hacer?**
+
+[[Siguiente...-&gt;Rafer-C-Next]]</tw-passagedata><tw-passagedata pid="54" name="Rafer-A-Next" tags="" position="3775,1400" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_anext&#39;}
+
+Una vez ya en el calabozo, adviertes la presencia de dos tipos de calabozo, uno normal, dónde hay un par de humanos y otro aparentemente algo más protegido. Antes de que puedas observar nada más te meten directamente en el segundo calabozo, dónde una vez dentro divisas un par de semielfos y algunos dracónidos dispersados y hundidos en su propia desdicha. 
+
+El viaje de la escolta que te ha traído hasta aquí culmina atándote las manos a la pared con unas esposas clavadas al muro de piedra, sin posibilidad alguna de huida.
+
+[[Siguiente...-&gt;Rafer-End]]</tw-passagedata><tw-passagedata pid="55" name="Rafer-B-1" tags="" position="4075,1125" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_b1&#39;}
+
+Uno de los soldados que aparentemente parece el más experimentado te empieza a comentar la situación:
+
+- Bueno, pues en primer lugar debes presentarte en la Liga de Aventureros, una vez ahí debes entrar en recepción, te harán rellenar diferentes formularios de responsabilidad y mierdas de esas. Total que tendrás que pagar bastante oro para que te den la licencia y probar tus aptitudes tanto físicas como mentales. Es un rollo la verdad, hay que pensar mucho, por eso es mejor alistarse en el ejército de la Luz, que no te piden nada y no hay que pensar mucho.
+
+**¿Qué haces?**
+
+
+[[Responderles: &quot;Claro, por eso estáis aquí&quot;-&gt;Rafer-B-1-1]]
+
+[[Te cansas de tanta cháchara y decides intentar cargártelos, aunque sólo sea para divertirte un rato.-&gt;Rafer-B-2]]
+
+[[Irse sin más, a encontrar algún desafío de mayor calibre.-&gt;Rafer-B-1-3]]</tw-passagedata><tw-passagedata pid="56" name="Rafer-B-2" tags="" position="4275,1150" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_b2&#39;}
+
+Los soldados se percatan de tus intenciones y desenvainan sus espadas, pero tu experiencia te permite anticiparte a sus primera acciones, así que inicias la pelea hábilmente, pillandoles desprevenidos, pero rápidamente los soldados se colocan en formación dispuestos a contrarrestar tu ataque. Tu fuerza bruta golpea implacablemente contra sus escudos, dos de los soldados caen hacia atrás mientras los otros dos les ayudan a reincorporarse. 
+
+Poco a poco van resistiendo mejor tus ataques sin apenas contraatacar. En el momento en que empiezas a flaquear de estamina por golpear tantas repetidas veces en su armadura es cuando los soldados aprovechan para molerte a palos e intentar reducirte. Te resistes con todas tus fuerzas, y cuando dos de ellos intentan sujetarte les mandas volando por los aires, pero de algún lado recibes un fuerte golpe en la cabeza que te hace perder el conocimiento por unos instantes. El tiempo suficiente para maniatarte y dejarte bajo arresto. 
+
+Cuando los soldados se recuperan de la paliza que les has dado, uno recupera aire y te dice que irás directo al calabozo como el animal que eres.
+
+[[Siguiente...-&gt;Rafer-C-Next]]</tw-passagedata><tw-passagedata pid="57" name="Rafer-C-Next" tags="" position="4450,1400" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_cnext&#39;}
+
+Una vez ya en el calabozo, adviertes la presencia de dos tipos de calabozo, uno normal, dónde hay un par de humanos y otro aparentemente algo más protegido. Antes de que puedas observar nada más te meten directamente en el segundo calabozo, dónde una vez dentro divisas un par de semielfos y algunos dracónidos dispersados y hundidos en su propia desdicha. 
+
+El viaje de la escolta que te ha traído hasta aquí culmina atándote las manos a la pared con unas esposas clavadas al muro de piedra, sin posibilidad alguna de huida.
+
+
+[[Siguiente...-&gt;Rafer-End]]</tw-passagedata><tw-passagedata pid="58" name="Rafer-B-1-1" tags="" position="3900,1250" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_b11&#39;}
+
+Los soldados no te miraban ya con buenos ojos, pero con el disrespect más grande que se ha hecho en siglos, se cabrean un poco bastante (como era evidente) y deciden atacarte por insubordinación.
+
+Desenvainan sus espadas, pero tu experiencia te permite anticiparte a sus primera acciones, así que inicias la pelea hábilmente, pillandoles desprevenidos, pero rápidamente los soldados se colocan en formación dispuestos a contrarrestar tu ataque. Tu fuerza bruta golpea implacablemente contra sus escudos, dos de los soldados caen hacia atrás mientras los otros dos les ayudan a reincorporarse. 
+
+Poco a poco van resistiendo mejor tus ataques sin apenas contraatacar. En el momento en que empiezas a flaquear de estamina por golpear tantas repetidas veces en su armadura es cuando los soldados aprovechan para molerte a palos e intentar reducirte. Te resistes con todas tus fuerzas, y cuando dos de ellos intentan sujetarte les mandas volando por los aires, pero de algún lado recibes un fuerte golpe en la cabeza que te hace perder el conocimiento por unos instantes. El tiempo suficiente para maniatarte y dejarte bajo arresto. 
+
+Cuando los soldados se recuperan de la paliza que les has dado, uno recupera aire y te dice que irás directo al calabozo como el animal que eres.
+
+[[Siguiente...-&gt;Rafer-A-Next]]</tw-passagedata><tw-passagedata pid="59" name="Rafer-B-1-3" tags="" position="4125,1300" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_b13&#39;}
+
+Los soldados no te miraban ya con buenos ojos, pero con éste disrespect de dejarles con la palabra en la boca se cabrean un poco bastante y deciden atacarte por insubordinación.
+
+Desenvainan sus espadas, pero tu experiencia te permite anticiparte a sus primera acciones, así que inicias la pelea hábilmente, pillandoles desprevenidos, pero rápidamente los soldados se colocan en formación dispuestos a contrarrestar tu ataque. Tu fuerza bruta golpea implacablemente contra sus escudos, dos de los soldados caen hacia atrás mientras los otros dos les ayudan a reincorporarse. 
+
+Poco a poco van resistiendo mejor tus ataques sin apenas contraatacar. En el momento en que empiezas a flaquear de estamina por golpear tantas repetidas veces en su armadura es cuando los soldados aprovechan para molerte a palos e intentar reducirte. Te resistes con todas tus fuerzas, y cuando dos de ellos intentan sujetarte les mandas volando por los aires, pero de algún lado recibes un fuerte golpe en la cabeza que te hace perder el conocimiento por unos instantes. El tiempo suficiente para maniatarte y dejarte bajo arresto. 
+
+Cuando los soldados se recuperan de la paliza que les has dado, uno recupera aire y te dice que irás directo al calabozo como el animal que eres.
+
+[[Siguiente...-&gt;Rafer-C-Next]]
+
+
+</tw-passagedata><tw-passagedata pid="60" name="Rafer-End" tags="" position="4100,1575" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;rafer_end&#39;}
+
+{ambient sound: &#39;end&#39;, volume:&#39;0.3&#39;}
+
+Al paso de las horas evitas dormir para así estar en alerta en todo momento, pero poco a poco vas dando pequeñas cabezaditas involuntarias causadas por el sueño y el agotamiento. Entre sueños te parece escuchar una conversación entre dos guardias andaluzes, aunque no sabrías discernir entre realidad y ficción ahora mismo:
+
+- ¿Has oído lo del alguacil?
+
+- No, ¿Qué ha pasao’?
+
+- Pues se ve que ese desgraciao’ ha decidido tomarse unas vacaciones de las cuales no ha vuelto y encima el oro que había en la tesorería del pueblo ha desaparecío! Como pille a ese canalla mientras hacemos las patrullas le faltarán reales de a ocho pa’ correh.
+
+- Pues ahora que no hay ni juez ni verdugo se nos acumulará el trabajo en esta carcelucha de mierda. De verdad, quién me mandaría a mi a acabar trabajando en esta pocilga. Debería haber hecho caso a mi madre y haberme convertido en panadero o algo…
+
+- Ah que va, no te ralles por eso tete, se ve que los van a procesar sin jurao ni na’, todos pa la soga JAJAJA! 
+
+- Bueno ya les está bien, algo habrán hecho si les tenemos que vigilar. Enfin, ¿sabes cómo los ejecutarán, si en esta villa perdida de la mano de dios no tenemos ni orca.
+
+- Si bueno, pero tenemos buñuelos almenos, y los mejores de la región ehhh. 
+
+- Anda que no lo sabes tú bien ni na’.
+
+- Enfin coño, que me desvío de lo importante. Los transportarán mañana al alba al pueblo de al lao’, ahí si tienen pa’ colgarles del pescuezo.
+
+[[Siguiente...-&gt;Rafer-Final]]
+
+
+</tw-passagedata><tw-passagedata pid="61" name="Rafer-Final" tags="" position="4100,1775" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+
+{sound effect: &#39;rafer_final&#39;}
 
 &lt;h1&gt;Fin del Prólogo&lt;/h1&gt;
 
