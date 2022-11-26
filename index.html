@@ -33,7 +33,7 @@
             repeatCount="indefinite"
         />
 	</line>
-</svg></div></div></div></form><tw-storydata name="D&amp;D Intro" startnode="73" creator="Twine" creator-version="2.5.1" format="Chapbook" format-version="1.2.2" ifid="9293BD5E-7DAD-4FA3-901B-FAF7E3AA09C2" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#reset_cache{
+</svg></div></div></div></form><tw-storydata name="D&amp;D Intro" startnode="73" creator="Twine" creator-version="2.5.1" format="Chapbook" format-version="1.2.2" ifid="9293BD5E-7DAD-4FA3-901B-FAF7E3AA09C2" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#reset_cache{
   	border:none;
   	outline: 1px solid #eda726;
   	border-radius: 8px;
@@ -113,7 +113,9 @@ Elige uno de los siguientes personajes:
 
 * [[Rafer-&gt;Rafer Password]]
 
-* [[Gaston-&gt;Gaston Password]]</tw-passagedata><tw-passagedata pid="2" name="Kvothe" tags="" position="475,1350" size="200,200">
+* [[Gaston-&gt;Gaston Password]]
+
+* [[Lycan-&gt;Lycan Password]]</tw-passagedata><tw-passagedata pid="2" name="Kvothe" tags="" position="475,1350" size="200,200">
 {sound effect: &#39;kvothe_intro&#39;}
 
 Tú, Kvothe, notas una cálida aunque dolorosa sensación en el pecho, seguramente sea porque aún residen en ti los efectos del Pacto que acabas de hacer, que sólamente un insensato haría, y aún siendo consciente de ello, no te acobardas ante los hechos.
@@ -1281,13 +1283,445 @@ roderick_secret:&#39;roderick&#39;
 breoth_secret:&#39;breoth&#39;
 rafer_secret:&#39;rafer&#39;
 gaston_secret:&#39;gaston&#39;
+lycan_secret:&#39;lycan&#39;
 --
 
-&lt;h1 align=&quot;center&quot;&gt;Empieza la aventura&lt;/h1&gt;
+&lt;div align=&quot;center&quot;&gt;
 
-&lt;div align=&quot;center&quot;&gt;[[Empezar-&gt;Elige Personaje]] &lt;/div&gt;
+&lt;h1 style=&quot;margin-bottom:100px&quot;  align=&quot;center&quot;&gt;Bienvenidos viajeros&lt;/h1&gt;
 
-</tw-passagedata></tw-storydata><script>!function(){"use strict";var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};function t(e){if(e.__esModule)return e;var t=Object.defineProperty({},"__esModule",{value:!0});return Object.keys(e).forEach((function(n){var r=Object.getOwnPropertyDescriptor(e,n);Object.defineProperty(t,n,r.get?r:{enumerable:!0,get:function(){return e[n]}})})),t}var n="undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{};function r(){throw new Error("setTimeout has not been defined")}function o(){throw new Error("clearTimeout has not been defined")}var i=r,a=o;function s(e){if(i===setTimeout)return setTimeout(e,0);if((i===r||!i)&&setTimeout)return i=setTimeout,setTimeout(e,0);try{return i(e,0)}catch(t){try{return i.call(null,e,0)}catch(t){return i.call(this,e,0)}}}"function"==typeof n.setTimeout&&(i=setTimeout),"function"==typeof n.clearTimeout&&(a=clearTimeout);var c,l=[],u=!1,f=-1;function p(){u&&c&&(u=!1,c.length?l=c.concat(l):f=-1,l.length&&d())}function d(){if(!u){var e=s(p);u=!0;for(var t=l.length;t;){for(c=l,l=[];++f<t;)c&&c[f].run();f=-1,t=l.length}c=null,u=!1,function(e){if(a===clearTimeout)return clearTimeout(e);if((a===o||!a)&&clearTimeout)return a=clearTimeout,clearTimeout(e);try{a(e)}catch(t){try{return a.call(null,e)}catch(t){return a.call(this,e)}}}(e)}}function h(e,t){this.fun=e,this.array=t}h.prototype.run=function(){this.fun.apply(null,this.array)};function g(){}var m=g,b=g,v=g,y=g,w=g,k=g,x=g;var S=n.performance||{},_=S.now||S.mozNow||S.msNow||S.oNow||S.webkitNow||function(){return(new Date).getTime()};var E=new Date;var C={nextTick:function(e){var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)t[n-1]=arguments[n];l.push(new h(e,t)),1!==l.length||u||s(d)},title:"browser",browser:!0,env:{},argv:[],version:"",versions:{},on:m,addListener:b,once:v,off:y,removeListener:w,removeAllListeners:k,emit:x,binding:function(e){throw new Error("process.binding is not supported")},cwd:function(){return"/"},chdir:function(e){throw new Error("process.chdir is not supported")},umask:function(){return 0},hrtime:function(e){var t=.001*_.call(S),n=Math.floor(t),r=Math.floor(t%1*1e9);return e&&(n-=e[0],(r-=e[1])<0&&(n--,r+=1e9)),[n,r]},platform:"browser",release:{},config:{},uptime:function(){return(new Date-E)/1e3}};function A(e){return null!=e&&(!!e._isBuffer||O(e)||function(e){return"function"==typeof e.readFloatLE&&"function"==typeof e.slice&&O(e.slice(0,0))}(e))}function O(e){return!!e.constructor&&"function"==typeof e.constructor.isBuffer&&e.constructor.isBuffer(e)}void 0===n.TYPED_ARRAY_SUPPORT||n.TYPED_ARRAY_SUPPORT;var T="function"==typeof Object.create?function(e,t){e.super_=t,e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}})}:function(e,t){e.super_=t;var n=function(){};n.prototype=t.prototype,e.prototype=new n,e.prototype.constructor=e};function j(e,t){var n={seen:[],stylize:L};return arguments.length>=3&&(n.depth=arguments[2]),arguments.length>=4&&(n.colors=arguments[3]),I(t)?n.showHidden=t:t&&J(n,t),R(n.showHidden)&&(n.showHidden=!1),R(n.depth)&&(n.depth=2),R(n.colors)&&(n.colors=!1),R(n.customInspect)&&(n.customInspect=!0),n.colors&&(n.stylize=z),N(n,e,n.depth)}function z(e,t){var n=j.styles[t];return n?"["+j.colors[n][0]+"m"+e+"["+j.colors[n][1]+"m":e}function L(e,t){return e}function N(e,t,n){if(e.customInspect&&t&&H(t.inspect)&&t.inspect!==j&&(!t.constructor||t.constructor.prototype!==t)){var r=t.inspect(n,e);return q(r)||(r=N(e,r,n)),r}var o=function(e,t){if(R(t))return e.stylize("undefined","undefined");if(q(t)){var n="'"+JSON.stringify(t).replace(/^"|"$/g,"").replace(/'/g,"\\'").replace(/\\"/g,'"')+"'";return e.stylize(n,"string")}if(r=t,"number"==typeof r)return e.stylize(""+t,"number");var r;if(I(t))return e.stylize(""+t,"boolean");if(P(t))return e.stylize("null","null")}(e,t);if(o)return o;var i=Object.keys(t),a=function(e){var t={};return e.forEach((function(e,n){t[e]=!0})),t}(i);if(e.showHidden&&(i=Object.getOwnPropertyNames(t)),U(t)&&(i.indexOf("message")>=0||i.indexOf("description")>=0))return $(t);if(0===i.length){if(H(t)){var s=t.name?": "+t.name:"";return e.stylize("[Function"+s+"]","special")}if(M(t))return e.stylize(RegExp.prototype.toString.call(t),"regexp");if(B(t))return e.stylize(Date.prototype.toString.call(t),"date");if(U(t))return $(t)}var c,l,u="",f=!1,p=["{","}"];(c=t,Array.isArray(c)&&(f=!0,p=["[","]"]),H(t))&&(u=" [Function"+(t.name?": "+t.name:"")+"]");return M(t)&&(u=" "+RegExp.prototype.toString.call(t)),B(t)&&(u=" "+Date.prototype.toUTCString.call(t)),U(t)&&(u=" "+$(t)),0!==i.length||f&&0!=t.length?n<0?M(t)?e.stylize(RegExp.prototype.toString.call(t),"regexp"):e.stylize("[Object]","special"):(e.seen.push(t),l=f?function(e,t,n,r,o){for(var i=[],a=0,s=t.length;a<s;++a)G(t,String(a))?i.push(D(e,t,n,r,String(a),!0)):i.push("");return o.forEach((function(o){o.match(/^\d+$/)||i.push(D(e,t,n,r,o,!0))})),i}(e,t,n,a,i):i.map((function(r){return D(e,t,n,a,r,f)})),e.seen.pop(),function(e,t,n){if(e.reduce((function(e,t){return t.indexOf("\n"),e+t.replace(/\u001b\[\d\d?m/g,"").length+1}),0)>60)return n[0]+(""===t?"":t+"\n ")+" "+e.join(",\n  ")+" "+n[1];return n[0]+t+" "+e.join(", ")+" "+n[1]}(l,u,p)):p[0]+u+p[1]}function $(e){return"["+Error.prototype.toString.call(e)+"]"}function D(e,t,n,r,o,i){var a,s,c;if((c=Object.getOwnPropertyDescriptor(t,o)||{value:t[o]}).get?s=c.set?e.stylize("[Getter/Setter]","special"):e.stylize("[Getter]","special"):c.set&&(s=e.stylize("[Setter]","special")),G(r,o)||(a="["+o+"]"),s||(e.seen.indexOf(c.value)<0?(s=P(n)?N(e,c.value,null):N(e,c.value,n-1)).indexOf("\n")>-1&&(s=i?s.split("\n").map((function(e){return"  "+e})).join("\n").substr(2):"\n"+s.split("\n").map((function(e){return"   "+e})).join("\n")):s=e.stylize("[Circular]","special")),R(a)){if(i&&o.match(/^\d+$/))return s;(a=JSON.stringify(""+o)).match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)?(a=a.substr(1,a.length-2),a=e.stylize(a,"name")):(a=a.replace(/'/g,"\\'").replace(/\\"/g,'"').replace(/(^"|"$)/g,"'"),a=e.stylize(a,"string"))}return a+": "+s}function I(e){return"boolean"==typeof e}function P(e){return null===e}function q(e){return"string"==typeof e}function R(e){return void 0===e}function M(e){return F(e)&&"[object RegExp]"===W(e)}function F(e){return"object"==typeof e&&null!==e}function B(e){return F(e)&&"[object Date]"===W(e)}function U(e){return F(e)&&("[object Error]"===W(e)||e instanceof Error)}function H(e){return"function"==typeof e}function Z(e){return null===e||"boolean"==typeof e||"number"==typeof e||"string"==typeof e||"symbol"==typeof e||void 0===e}function W(e){return Object.prototype.toString.call(e)}function J(e,t){if(!t||!F(t))return e;for(var n=Object.keys(t),r=n.length;r--;)e[n[r]]=t[n[r]];return e}function G(e,t){return Object.prototype.hasOwnProperty.call(e,t)}function V(e,t){if(e===t)return 0;for(var n=e.length,r=t.length,o=0,i=Math.min(n,r);o<i;++o)if(e[o]!==t[o]){n=e[o],r=t[o];break}return n<r?-1:r<n?1:0}j.colors={bold:[1,22],italic:[3,23],underline:[4,24],inverse:[7,27],white:[37,39],grey:[90,39],black:[30,39],blue:[34,39],cyan:[36,39],green:[32,39],magenta:[35,39],red:[31,39],yellow:[33,39]},j.styles={special:"cyan",number:"yellow",boolean:"yellow",undefined:"grey",null:"bold",string:"green",date:"magenta",regexp:"red"};var Y,X=Object.prototype.hasOwnProperty,K=Object.keys||function(e){var t=[];for(var n in e)X.call(e,n)&&t.push(n);return t},Q=Array.prototype.slice;function ee(){return void 0!==Y?Y:Y="foo"===function(){}.name}function te(e){return Object.prototype.toString.call(e)}function ne(e){return!A(e)&&("function"==typeof n.ArrayBuffer&&("function"==typeof ArrayBuffer.isView?ArrayBuffer.isView(e):!!e&&(e instanceof DataView||!!(e.buffer&&e.buffer instanceof ArrayBuffer))))}function re(e,t){e||le(e,!0,t,"==",ue)}var oe=/\s*function\s+([^\(\s]*)\s*/;function ie(e){if(H(e)){if(ee())return e.name;var t=e.toString().match(oe);return t&&t[1]}}function ae(e){this.name="AssertionError",this.actual=e.actual,this.expected=e.expected,this.operator=e.operator,e.message?(this.message=e.message,this.generatedMessage=!1):(this.message=function(e){return se(ce(e.actual),128)+" "+e.operator+" "+se(ce(e.expected),128)}(this),this.generatedMessage=!0);var t=e.stackStartFunction||le;if(Error.captureStackTrace)Error.captureStackTrace(this,t);else{var n=new Error;if(n.stack){var r=n.stack,o=ie(t),i=r.indexOf("\n"+o);if(i>=0){var a=r.indexOf("\n",i+1);r=r.substring(a+1)}this.stack=r}}}function se(e,t){return"string"==typeof e?e.length<t?e:e.slice(0,t):e}function ce(e){if(ee()||!H(e))return j(e);var t=ie(e);return"[Function"+(t?": "+t:"")+"]"}function le(e,t,n,r,o){throw new ae({message:n,actual:e,expected:t,operator:r,stackStartFunction:o})}function ue(e,t){e||le(e,!0,t,"==",ue)}function fe(e,t,n){e!=t&&le(e,t,n,"==",fe)}function pe(e,t,n){e==t&&le(e,t,n,"!=",pe)}function de(e,t,n){ge(e,t,!1)||le(e,t,n,"deepEqual",de)}function he(e,t,n){ge(e,t,!0)||le(e,t,n,"deepStrictEqual",he)}function ge(e,t,n,r){if(e===t)return!0;if(A(e)&&A(t))return 0===V(e,t);if(B(e)&&B(t))return e.getTime()===t.getTime();if(M(e)&&M(t))return e.source===t.source&&e.global===t.global&&e.multiline===t.multiline&&e.lastIndex===t.lastIndex&&e.ignoreCase===t.ignoreCase;if(null!==e&&"object"==typeof e||null!==t&&"object"==typeof t){if(ne(e)&&ne(t)&&te(e)===te(t)&&!(e instanceof Float32Array||e instanceof Float64Array))return 0===V(new Uint8Array(e.buffer),new Uint8Array(t.buffer));if(A(e)!==A(t))return!1;var o=(r=r||{actual:[],expected:[]}).actual.indexOf(e);return-1!==o&&o===r.expected.indexOf(t)||(r.actual.push(e),r.expected.push(t),function(e,t,n,r){if(null==e||null==t)return!1;if(Z(e)||Z(t))return e===t;if(n&&Object.getPrototypeOf(e)!==Object.getPrototypeOf(t))return!1;var o=me(e),i=me(t);if(o&&!i||!o&&i)return!1;if(o)return ge(e=Q.call(e),t=Q.call(t),n);var a,s,c=K(e),l=K(t);if(c.length!==l.length)return!1;for(c.sort(),l.sort(),s=c.length-1;s>=0;s--)if(c[s]!==l[s])return!1;for(s=c.length-1;s>=0;s--)if(!ge(e[a=c[s]],t[a],n,r))return!1;return!0}(e,t,n,r))}return n?e===t:e==t}function me(e){return"[object Arguments]"==Object.prototype.toString.call(e)}function be(e,t,n){ge(e,t,!1)&&le(e,t,n,"notDeepEqual",be)}function ve(e,t,n){ge(e,t,!0)&&le(e,t,n,"notDeepStrictEqual",ve)}function ye(e,t,n){e!==t&&le(e,t,n,"===",ye)}function we(e,t,n){e===t&&le(e,t,n,"!==",we)}function ke(e,t){if(!e||!t)return!1;if("[object RegExp]"==Object.prototype.toString.call(t))return t.test(e);try{if(e instanceof t)return!0}catch(e){}return!Error.isPrototypeOf(t)&&!0===t.call({},e)}function xe(e,t,n,r){var o;if("function"!=typeof t)throw new TypeError('"block" argument must be a function');"string"==typeof n&&(r=n,n=null),o=function(e){var t;try{e()}catch(e){t=e}return t}(t),r=(n&&n.name?" ("+n.name+").":".")+(r?" "+r:"."),e&&!o&&le(o,n,"Missing expected exception"+r);var i="string"==typeof r,a=!e&&o&&!n;if((!e&&U(o)&&i&&ke(o,n)||a)&&le(o,n,"Got unwanted exception"+r),e&&o&&n&&!ke(o,n)||!e&&o)throw o}function Se(e,t,n){xe(!0,e,t,n)}function _e(e,t,n){xe(!1,e,t,n)}function Ee(e){if(e)throw e}re.AssertionError=ae,T(ae,Error),re.fail=le,re.ok=ue,re.equal=fe,re.notEqual=pe,re.deepEqual=de,re.deepStrictEqual=he,re.notDeepEqual=be,re.notDeepStrictEqual=ve,re.strictEqual=ye,re.notStrictEqual=we,re.throws=Se,re.doesNotThrow=_e,re.ifError=Ee;var Ce=t(Object.freeze({__proto__:null,default:re,AssertionError:ae,fail:le,ok:ue,assert:ue,equal:fe,notEqual:pe,deepEqual:de,deepStrictEqual:he,notDeepEqual:be,notDeepStrictEqual:ve,strictEqual:ye,notStrictEqual:we,throws:Se,doesNotThrow:_e,ifError:Ee})),Ae=Ce,Oe="undefined"!=typeof window;function Te(e){this.hasWindow=e,this.hasIdle=this.hasWindow&&window.requestIdleCallback,this.method=this.hasIdle?window.requestIdleCallback.bind(window):this.setTimeout,this.scheduled=!1,this.queue=[]}Te.prototype.push=function(e){Ae.equal(typeof e,"function","nanoscheduler.push: cb should be type function"),this.queue.push(e),this.schedule()},Te.prototype.schedule=function(){if(!this.scheduled){this.scheduled=!0;var e=this;this.method((function(t){for(;e.queue.length&&t.timeRemaining()>0;)e.queue.shift()(t);e.scheduled=!1,e.queue.length&&e.schedule()}))}},Te.prototype.setTimeout=function(e){setTimeout(e,0,{timeRemaining:function(){return 1}})};var je,ze=function(){var e;return Oe?(window._nanoScheduler||(window._nanoScheduler=new Te(!0)),e=window._nanoScheduler):e=new Te,e},Le=ze(),Ne=Ce;De.disabled=!0;try{je=window.performance,De.disabled="true"===window.localStorage.DISABLE_NANOTIMING||!je.mark}catch(e){}var $e=De;function De(e){if(Ne.equal(typeof e,"string","nanotiming: name should be type string"),De.disabled)return Ie;var t=(1e4*je.now()).toFixed()%Number.MAX_SAFE_INTEGER,n="start-"+t+"-"+e;function r(r){var o="end-"+t+"-"+e;je.mark(o),Le.push((function(){var i=null;try{var a=e+" ["+t+"]";je.measure(a,n,o),je.clearMarks(n),je.clearMarks(o)}catch(e){i=e}r&&r(i,e)}))}return je.mark(n),r.uuid=t,r}function Ie(e){e&&Le.push((function(){e(new Error("nanotiming: performance API unavailable"))}))}var Pe,qe=Ce;Re.disabled=!0;try{Pe=require("perf_hooks").performance,Re.disabled=C.env.DISABLE_NANOTIMING||!Pe.mark}catch(e){}function Re(e){if("undefined"!=typeof window)return $e(e);if(qe.equal(typeof e,"string","nanotiming: name should be type string"),Re.disabled)return Me;var t=(1e4*Pe.now()).toFixed()%Number.MAX_SAFE_INTEGER,n="start-"+t+"-"+e;function r(r){var o="end-"+t+"-"+e;Pe.mark(o);var i=null;try{var a=e+" ["+t+"]";Pe.measure(a,n,o),Pe.clearMarks(n),Pe.clearMarks(o)}catch(e){i=e}r&&r(i,e)}return Pe.mark(n),r.uuid=t,r}function Me(e){e&&e(new Error("nanotiming: performance API unavailable"))}var Fe=function(e,t,n){var r,o=e.length;if(!(t>=o||0===n)){var i=o-(n=t+n>o?o-t:n);for(r=t;r<i;++r)e[r]=e[r+n];e.length=i}},Be=Re,Ue=Ce,He=Ze;function Ze(e){if(!(this instanceof Ze))return new Ze(e);this._name=e||"nanobus",this._starListeners=[],this._listeners={}}Ze.prototype.emit=function(e){Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.emit: eventName should be type string or symbol");for(var t=[],n=1,r=arguments.length;n<r;n++)t.push(arguments[n]);var o=Be(this._name+"('"+e.toString()+"')"),i=this._listeners[e];return i&&i.length>0&&this._emit(this._listeners[e],t),this._starListeners.length>0&&this._emit(this._starListeners,e,t,o.uuid),o(),this},Ze.prototype.on=Ze.prototype.addListener=function(e,t){return Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.on: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.on: listener should be type function"),"*"===e?this._starListeners.push(t):(this._listeners[e]||(this._listeners[e]=[]),this._listeners[e].push(t)),this},Ze.prototype.prependListener=function(e,t){return Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.prependListener: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.prependListener: listener should be type function"),"*"===e?this._starListeners.unshift(t):(this._listeners[e]||(this._listeners[e]=[]),this._listeners[e].unshift(t)),this},Ze.prototype.once=function(e,t){Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.once: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.once: listener should be type function");var n=this;return this.on(e,(function r(){t.apply(n,arguments),n.removeListener(e,r)})),this},Ze.prototype.prependOnceListener=function(e,t){Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.prependOnceListener: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.prependOnceListener: listener should be type function");var n=this;return this.prependListener(e,(function r(){t.apply(n,arguments),n.removeListener(e,r)})),this},Ze.prototype.removeListener=function(e,t){return Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.removeListener: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.removeListener: listener should be type function"),"*"===e?(this._starListeners=this._starListeners.slice(),n(this._starListeners,t)):(void 0!==this._listeners[e]&&(this._listeners[e]=this._listeners[e].slice()),n(this._listeners[e],t));function n(e,t){if(e){var n=e.indexOf(t);return-1!==n?(Fe(e,n,1),!0):void 0}}},Ze.prototype.removeAllListeners=function(e){return e?"*"===e?this._starListeners=[]:this._listeners[e]=[]:(this._starListeners=[],this._listeners={}),this},Ze.prototype.listeners=function(e){var t="*"!==e?this._listeners[e]:this._starListeners,n=[];if(t)for(var r=t.length,o=0;o<r;o++)n.push(t[o]);return n},Ze.prototype._emit=function(e,t,n,r){if(void 0!==e&&0!==e.length){void 0===n&&(n=t,t=null),t&&(n=void 0!==r?[t].concat(n,r):[t].concat(n));for(var o=e.length,i=0;i<o;i++){var a=e[i];a.apply(a,n)}}};var We=He();function Je(e){return Je="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},Je(e)}function Ge(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function Ve(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function Ye(e,t,n){return t&&Ve(e.prototype,t),n&&Ve(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function Xe(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Qe(e,t)}function Ke(e){return Ke=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)},Ke(e)}function Qe(e,t){return Qe=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e},Qe(e,t)}function et(e,t){if(t&&("object"==typeof t||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e)}function tt(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=Ke(e);if(t){var o=Ke(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return et(this,n)}}function nt(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null==n)return;var r,o,i=[],a=!0,s=!1;try{for(n=n.call(e);!(a=(r=n.next()).done)&&(i.push(r.value),!t||i.length!==t);a=!0);}catch(e){s=!0,o=e}finally{try{a||null==n.return||n.return()}finally{if(s)throw o}}return i}(e,t)||ot(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}
+&lt;p&gt;En éste manuscrito se esconden las intrépidas aventuras que recorristeis para acabar inexorablemente al filo de una muerte casi segura.&lt;/p&gt;
+
+&lt;p&gt;Tras caer en las fieras garras del destino, os enfrentáis a uno de los mayores challenge de vuestra vida, sobrevivir en equipo o perecer.&lt;/p&gt;
+
+
+&lt;h3 style=&quot;margin-top:100px&quot; align=&quot;center&quot;&gt;[[Empieza tu aventura-&gt;Elige Personaje]] &lt;/h3&gt;
+
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="74" name="Lycan Password" tags="" position="5925,900" size="100,100">sound.effect.lycan_intro1.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_Intro_1_hg9k6i.mp3&#39;
+
+sound.effect.lycan_intro2.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408432/DungeonsDragonsMedia/Lycan/Lycan_Intro_2_c6q86z.wav&#39;
+
+sound.effect.lycan_intro3.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408432/DungeonsDragonsMedia/Lycan/Lycan_Intro_3_rq08o7.wav&#39;
+
+sound.effect.lycan_a.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408429/DungeonsDragonsMedia/Lycan/Lycan_A_drjbqr.mp3&#39;
+
+sound.effect.lycan_aN.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408429/DungeonsDragonsMedia/Lycan/Lycan_A_N_ljnzm7.mp3&#39;
+
+sound.effect.lycan_aNN.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408429/DungeonsDragonsMedia/Lycan/Lycan_A_N_N_bmfx4f.mp3&#39;
+
+sound.effect.lycan_aNN1.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408429/DungeonsDragonsMedia/Lycan/Lycan_A_N_N_1_lwlcvy.mp3&#39;
+
+sound.effect.lycan_aNN2.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408429/DungeonsDragonsMedia/Lycan/Lycan_A_N_N_2_i2lbar.mp3&#39;
+
+sound.effect.lycan_aNN2N.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408429/DungeonsDragonsMedia/Lycan/Lycan_A_N_N_2_N_me0r9b.mp3&#39;
+
+sound.effect.lycan_b.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669409783/DungeonsDragonsMedia/Lycan/Lycan_B_t77gie.mp3&#39;
+
+sound.effect.lycan_bN.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_B_N_o4wgws.mp3&#39;
+
+sound.effect.lycan_bN1.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_B_N_1_unhvzk.mp3&#39;
+
+sound.effect.lycan_bN2.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_B_N_2_qtrmcx.mp3&#39;
+
+sound.effect.lycan_c.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_C_mspami.mp3&#39;
+
+sound.effect.lycan_c1.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_C_1_ct3cdw.mp3&#39;
+
+sound.effect.lycan_c2.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_C_2_bdsahv.mp3&#39;
+
+sound.effect.lycan_c21.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_C_2_1_dyj9cb.mp3&#39;
+
+sound.effect.lycan_c22.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_C_2_2_etcny0.mp3&#39;
+
+sound.effect.lycan_c21N.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408432/DungeonsDragonsMedia/Lycan/Lycan_C_2_1_N_q9ryeu.mp3&#39;
+
+sound.effect.lycan_c22N.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_C_2_2_N_yxp7vs.mp3&#39;
+
+sound.effect.lycan_c21NN.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_C_2_1_N_N_bmt3ha.mp3&#39;
+
+sound.effect.lycan_c21NN1.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_C_2_1_N_N_1_bnenfi.mp3&#39;
+
+sound.effect.lycan_c21NN1N.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408430/DungeonsDragonsMedia/Lycan/Lycan_C_2_1_N_N_1_N_unz9gf.mp3&#39;
+
+sound.effect.lycan_end.url:&#39;https://res.cloudinary.com/dcgbmo9ov/video/upload/v1669408431/DungeonsDragonsMedia/Lycan/Lycan_End_xrmuej.mp3&#39;
+--
+
+&lt;h2&gt;Introduce la contraseña para acceder a Lycan&lt;/h2&gt;
+
+{text input for: &#39;lycan_pass&#39;}
+
+
+[[Empieza la aventura-&gt;Password Validator Lycan]]</tw-passagedata><tw-passagedata pid="75" name="Password Validator Lycan" tags="" position="6200,1150" size="100,100">
+[if lycan_pass === lycan_secret]
+
+[after 2 second]
+{embed passage: &#39;Lycan-1&#39;}
+[continued]
+
+[else]
+
+Contraseña incorrecta vuelve a intentar...
+
+[[Volver-&gt;Lycan Password]]
+</tw-passagedata><tw-passagedata pid="76" name="Lycan-1" tags="" position="6250,1525" size="200,100">
+{sound effect: &#39;lycan_intro1&#39;}
+
+Tú, Lycan Hevia, has sido escogido por el demonio Jack, almenos por el momento. Por visicitudes o caprichos del destino deberás estar a la altura de un ser mítico y de una edad totalmente inimaginable para cualquier raza, dejando a los eones del tiempo como meros e insignificantes instantes ante la magnificencia de tal artefacto. Éste, creado por una raza de la cuál ya ni siquiera se conservan yacimientos o cualquier otro tipo de evidencia real de su existencia, es la única prueba… quizá viviente de ello. 
+
+
+Gracias a tu astucia has conseguido escapar ileso de un fatídico destino. Pero tu aventura y el peligro que ésta conlleva no ha hecho más que empezar. Tu objetivo principal es averiguar a la mano tanto ejecutora como intelectual que han llevado a cabo tu intento de asesinato y, de paso, librarte de esta maldita espada.
+
+
+[[Siguiente...-&gt;Lycan-2]]
+
+</tw-passagedata><tw-passagedata pid="77" name="Lycan-2" tags="" position="6300,1800" size="200,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_intro2&#39;}
+
+Dado que tu única pista es el contacto con tu cliente, decides ir a hablar con él.
+
+Te contrató en un pueblecito de campesinos perdido de la mano de Dios, así que emprendes tu camino a esa villa. Una vez llegas al pueblo, esperas pacientemente a que sea de noche para irrumpir en la casa que debía ser del cliente para arrancarle las respuestas a tus preguntas de su sucia lengua.
+
+
+
+Pero para tu sorpresa, una vez que entras en la casa te la encuentras muy diferente a cuando viniste por primera vez, no había nada, ni un solo mueble, estante, mesa… nada. El lugar estaba completamente vacío, como si hubieran dejado únicamente las cuatro paredes de ladrillo mal hecho.
+
+
+
+Rebuscas por todos lados, pero no encuentras absolutamente nada. Los pensamientos de que todo esto ha sido en vano empiezan a rondar por tu cabeza, pero no te rindes aquí, no permites que tu ánimo decaiga a la primera de turno, así que empiezas a maquinar el próximo movimiento.
+
+[[Siguiente...-&gt;Lycan-3]]
+</tw-passagedata><tw-passagedata pid="78" name="Lycan-3" tags="" position="6350,2100" size="200,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_intro3&#39;}
+
+Por el momento, desde que sales de la casa vacía sólo tienes una idea rondándote la cabeza. Ahora la única pista que te queda es tu pañuelo, el que te ofreció el cliente para tapar el artefacto y poder llevártelo así. Éste tiene bordado en la punta inferior derecha una especie de escudo de familia el cuál no te suena de nada, pero presupones que será el escudo familiar del cliente.
+
+**¿Qué haces?**
+
+
+
+[[Preguntar por los alrededores de la vivienda del cliente si alguien sabe algo (de forma discreta y cautelosa)...-&gt;Lycan-A]]
+
+[[Ir dando voces por la villa con la esperanza de que a alguien le suene (de forma indiscreta y llamando la atención a grito pelao’ como cualquier buen hijo de vecino).-&gt;Lycan-B]]
+
+[[Ir a la biblioteca más cercana a recabar información.-&gt;Lycan-C]]</tw-passagedata><tw-passagedata pid="79" name="Lycan-A" tags="" position="5950,2300" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_a&#39;}
+
+
+La calle está más muerta que tú en fin de año de 2019, así que al no ver ni a Dios por la calle decides entrar al único local abierto del lugar, el cuál deduces que es una taberna por su apariencia. 
+
+Antes de entrar lees el cartel con el nombre del local: &quot;La Rosa Pálida&quot;. Visto desde fuera tiene cierto aire a taberna de típico pueblo medieval.
+
+
+[[Siguiente...-&gt;Lycan-A-N]]
+</tw-passagedata><tw-passagedata pid="80" name="Lycan-B" tags="" position="6425,2350" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_b&#39;}
+
+Al estar en una calle tipo barrio gótico de Barcelona, se asoma bastante gente por la ventana de los pisos. La mayoría evidentemente no te hace ni putíssimo caso, pero un par o tres de viejas amargadas y malfollás deciden tirarte los cubos de heces y meados que tienen guardados en sus respectivas viviendas. 
+
+La verdad es que no te esperabas para nada éste nivel de hostilidad hacia un amable y para nada ruidoso forastero, así que no estabas prevenido de lo que se te venía encima (nunca mejor dicho). Al tener el oído más desarrollado de lo normal para otras razas, consigues esquivar las primeras lluvias doradas, pero tristemente tu habilidad no da para esquivar tantos proyectiles enemigos, con lo que acabas empapado por algún que otro cubo que, por lo visto, traía regalito.
+
+[[Siguiente...-&gt;Lycan-B-N]]</tw-passagedata><tw-passagedata pid="81" name="Lycan-C" tags="" position="7075,2325" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c&#39;}
+
+Ya que el punto de encuentro fue en una villa, decides que sería sensato recopilar información del lugar, ya que probablemente sea un sitio donde los pueblerinos conozcan a tu cliente, sin embargo, absorto por estos pensamientos, te hallas de pronto vagando, desorientado entre calles estrechas, oscuras y malolientes. Mientras sigues andando te topas con una tienda, en ésta hay un cartel de madera podrida colgado a un lado de la puerta el cuál pone: &quot;Biblioteca de Alhazred&quot;
+
+
+**¿Cuál será tu próximo movimiento?**
+
+
+[[Pasar e ir a buscar otra fuente de información menos espeluznante que ese antro.-&gt;Lycan-C-1]]
+
+[[Entrar para buscar información-&gt;Lycan-C-2]]
+
+
+
+</tw-passagedata><tw-passagedata pid="82" name="Lycan-A-N" tags="" position="5950,2550" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_aN&#39;}
+
+Al entrar ves lo que viene a ser un cabaret de poco alto standing. Entre todas las lujuriosas mujeres que ves en la sala, destacan un grupo de hombres, al parecer un par de guardias intentando mantener a distancia a un sujeto sumamente musculoso y grande. 
+
+Parece que ha empezado una trifulca, así que decides mejor no meterte en medio y pasar desapercibido.
+
+[[Siguiente...-&gt;Lycan-A-N-N]]</tw-passagedata><tw-passagedata pid="83" name="Lycan-A-N-N" tags="" position="5950,2825" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_aNN&#39;}
+
+Te acercas a la barra para pedir algo de beber cuando de forma súbita aparecen dos hetairas a ofrecerte sus deseables servicios. 
+
+
+**¿Qué decides hacer?**
+
+
+
+[[Preguntarle a cuánto la hora por las dos y porqué tan caro, para luego aceptar la oferta sea cual sea el precio, follartelas y después irte sin pagar en modo murciélago.-&gt;Lycan-A-N-N-1]]
+
+
+[[Centrarte en el objetivo por el cual has venido y preguntarles si conocen el emblema.-&gt;Lycan-A-N-N-2]]
+</tw-passagedata><tw-passagedata pid="84" name="Lycan-A-N-N-1" tags="" position="5750,3025" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_aNN1&#39;}
+
+&lt;h2&gt;Pero qué te crees? Céntrate tontito, que en el prólogo no se folla a nadie menos yo a vosotros.&lt;/h2&gt;
+
+
+[[Centrarte en el objetivo por el cual has venido y preguntarles si conocen el emblema.-&gt;Lycan-A-N-N-2]]
+</tw-passagedata><tw-passagedata pid="85" name="Lycan-A-N-N-2" tags="" position="6100,3050" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_aNN2&#39;}
+
+Les enseñas el emblema y les realizas dicha pregunta. La expresión en el rostro de las meretrices se vuelve de una mezcla entre incredulidad y miedo. Al segundo empiezan a montar un buen pollo ante ti, gritando como si hubieran visto uno de tus mutilamientos semanales o algo. Rápidamente los soldados que habían en la sala disfrutando de buena compañía quedan alterados por los gritos y las advertencias de las heteras. 
+
+En cuestión de unos instantes los guardias van a ver qué sucede, medio enfadados ya que tú eres el motivo de que se les haya cortado el rollo en su rato de permiso.
+
+Las cortesanas advierten del contenido que llevas contigo, y uno de los soldados procede a cachearte minuciosamente, por TODOS y CADA UNO de los recobecos de tu cuerpo de forma totalmente innecesaria. Vaya, piensas que al parecer el guardia que te cachea no estaba en el local por las mujeres, sino más bien para inspeccionar a los hombres que acaban borrachos e indefensos. Lo pasas mal realmente mal por un rato, pero en cuanto el policía termina la inspección a fondo saca el pañuelo que ya había encontrado desde hace rato.
+
+[[Siguiente...-&gt;Lycan-A-N-N-2-N]]
+
+</tw-passagedata><tw-passagedata pid="86" name="Lycan-A-N-N-2-N" tags="" position="6100,3250" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_aNN2N&#39;}
+
+Después de adueñarse de todos y cada uno de tus objetos de valor, se centran al fin en tu pañuelo.
+
+
+Aún no entiendes muy bien porqué, pero se quedan atónitos mirando el emblema durante un período considerable de tiempo, medio minuto perfectamente. Su reacción estupefacta no mejora nada el ambiente, la atmósfera queda más bien cargada con un aire de tensión extremo. Presientes que nada bueno puede pasar, y en efecto. Cuando los soldados reaccionan, ya es demasiado tarde para hacer algo al respecto, y proceden a agredirte arrestándote a gran velocidad.
+
+Tú aún sin entender nada recibes unos cuantos golpes en la cabeza que te cortan completamente la capacidad de habla. Y mientras resistes al borde del noqueo escuchas:
+
+
+&quot;Queda usted arrestado por tratos con las altas esferas de las organizaciones criminales más buscadas.&quot;
+
+[[Siguiente...-&gt;Lycan-End]]
+</tw-passagedata><tw-passagedata pid="87" name="Lycan-End" tags="" position="6475,3425" size="100,100">
+[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_end&#39;}
+
+{ambient sound: &#39;end&#39;, volume:&#39;0.3&#39;}
+
+&lt;h1&gt;Fin del Prólogo&lt;/h1&gt;
+
+Al despertarte, te encuentras en una especie de calabozo, pero a un nivel extremo de precariedad, sólo hay una esposa apuntalada a la pared que está ligada a tu cuello, cuál perro de caza. Cuando miras a tu alrededor descubres a un par de guardias que te observan a través de las rejas. Cuando reaccionas les intentas convencer de que tú no sabes nada de lo que hablan ni de lo que te acusan. Por desgracia, ningún tipo de subterfugio te acaba librando de ésta, ellos insisten en sus argumentos. Te han identificado como el ladrón Lycan Hevia, más bien conocido como La Sombra del Sur (SS) y se te relaciona con altas bandas criminales y mafiosas, entre las que se incluyen operaciones ilegales prioritarias como el tráfico de personas, órganos y cartas de Hearthstone (productos muy codiciados en el mercado negro e ilegales como mercaderías).
+
+Por todos estos argumentos totalmente racionales y avalados con pruebas claramente sólidas, se te decide aplicar la pena general en este tipo de situaciones, la orca.
+
+</tw-passagedata><tw-passagedata pid="88" name="Lycan-B-N" tags="" position="6425,2575" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_bN&#39;}
+
+Después de quitarte literalmente la mierda de encima y secarte un poco a la fría brisa de la noche, se acercan unos amables guardias que iban patrullando por ahí y escucharon el alboroto. Como puedes entender y comprobar éstos no se acercan demasiado a ti, y mantienen bastante la distancia. A continuación te preguntan que es lo que buscas en este lugar tan reacio para los transeúntes. 
+
+**¿Qué haces?**
+
+[[Les preguntas amablemente si conocen el escudo que hay bordado en el pañuelo.-&gt;Lycan-B-N-1]]
+
+[[Huyes (salir corriendo literalmente) utilitzando una técnica secreta familiar milenaria conocida como &quot;Nigerundayo&quot;-&gt;Lycan-B-N-2]]
+
+
+</tw-passagedata><tw-passagedata pid="89" name="Lycan-B-N-1" tags="" position="6325,2850" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_bN1&#39;}
+
+Al ofrecerles el pañuelo para que lo mirasen captas todas su atención. Aún no entiendes muy bien porqué, pero se quedan atónitos mirando el emblema durante un período considerable de tiempo, medio minuto perfectamente. Su reacción estupefacta no mejora nada el ambiente, la atmósfera queda más bien cargada con un aire de tensión extremo. Presientes que nada bueno puede pasar, y en efecto. Cuando los soldados reaccionan, ya es demasiado tarde para poner en práctica la técnica milenaria de salir por patas y te agreden arrestándote a gran velocidad.
+
+Tú aún sin entender nada recibes unos cuantos golpes en la cabeza que te cortan completamente la capacidad de habla. Y mientras resistes al borde del noqueo escuchas:
+
+&quot;Queda usted arrestado por tratos con las altas esferas de las organizaciones criminales más buscadas.&quot;
+
+
+[[Siguiente...-&gt;Lycan-End]]</tw-passagedata><tw-passagedata pid="90" name="Lycan-B-N-2" tags="" position="6700,2800" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_bN2&#39;}
+
+La idea era buena, para qué engañarnos, pero los soldados, como buenos humanos racistas, han previsto algún tipo de malicia escondida en tus intenciones, con lo que un guardia ya se había posicionado detrás tuya. Seguidamente proceden a abusar de su poder policial en tu contra, te someten y te quitan tus pertenencias por intentar huir de la justicia. Después de adueñarse de todos y cada uno de tus objetos de valor, ven al fin tu pañuelo.
+
+
+
+Aún no entiendes muy bien porqué, pero se quedan atónitos mirando el emblema durante un período considerable de tiempo, medio minuto perfectamente. Su reacción estupefacta no mejora nada el ambiente, la atmósfera queda más bien cargada con un aire de tensión extremo. Presientes que nada bueno puede pasar, y en efecto. Cuando los soldados reaccionan, ya es demasiado tarde para hacer algo al respecto, y proceden a agredirte arrestándote a gran velocidad.
+
+Tú aún sin entender nada recibes unos cuantos golpes en la cabeza que te cortan completamente la capacidad de habla. Y mientras resistes al borde del noqueo escuchas:
+
+
+&quot;Queda usted arrestado por tratos con las altas esferas de las organizaciones criminales más buscadas.&quot;
+
+
+[[Siguiente...-&gt;Lycan-End]]</tw-passagedata><tw-passagedata pid="91" name="Lycan-C-1" tags="" position="6800,2425" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c1&#39;}
+
+Pasas de largo mientras se escucha un montón de alboroto dentro de la tienda. No haces ningún tipo de caso a la situación y te dispones a recorrer lo que te queda de villa.
+
+
+[[Preguntar por los alrededores de la vivienda del cliente si alguien sabe algo (de forma discreta y cautelosa).-&gt;Lycan-A]]
+
+
+[[Ir dando voces por la villa con la esperanza de que a alguien le suene (de forma indiscreta y llamando la atención a grito pelao’ como cualquier buen hijo de vecino).-&gt;Lycan-B]]
+</tw-passagedata><tw-passagedata pid="92" name="Lycan-C-2" tags="" position="7425,2600" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c2&#39;}
+
+Al entrar en dicha tienda observas una antigua pero muy bonita e interesante biblioteca. Esta se encuentra completamente vacía al parecer, aún así están todos los candelabros encendidos, y de pronto se escucha un extraño ruido en la trastienda. 
+
+**¿Qué haces?**
+
+
+[[Alzar un poco la voz casi gritando a ver si alguien sale de ahí para atenderte.-&gt;Lycan-C-2-2]]
+
+
+[[Entrar en la trastienda para averiguar qué sucede.-&gt;Lycan-C-2-1]]
+</tw-passagedata><tw-passagedata pid="93" name="Lycan-C-2-2" tags="" position="7700,2875" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c22&#39;}
+
+Cuando pegas un vozarrón para llamar la atención lo único que consigues es provocar un silencio estremecedor. Los ruidos que provenían de la trastienda cesan de repente. Te quedas unos segundos callado, sin saber cómo procesar muy bien la situación. Y justo al cabo de unos segundos una tenue y senil voz alza su presencia para pegar un grito moderado, al mismo nivel de intensidad que el tuyo, pero sin que fuera un sonido concreto, como si del grito de un jabalí o pájaro se tratara.
+
+
+
+Tras esta extraña situación preguntas si todo va bien, a lo que desde detrás de la puerta de la trastienda la misma voz corresponde a tu pregunta soltando una onomatopeya totalmente impronunciable e incomprensible para tu mente. No reconoces que pueda ser ningún tipo de idioma existente en el universo. Solamente te parecen ruidos aleatorios, sonidos fónicos elegidos al azar de forma totalmente incoherente. Tu curiosidad por saber qué coño está pasando incrementa por momentos, a la par que tus ganas de salir de ahí. 
+
+**¿Qué haces?**
+
+
+[[Entrar en la trastienda para averiguar qué sucede.-&gt;Lycan-C-2-1-N]]
+
+
+[[Salir de ahí cagando leches e ir a buscar otra fuente de información menos espeluznante que este antro.-&gt;Lycan-C-2-2-N]]
+</tw-passagedata><tw-passagedata pid="94" name="Lycan-C-2-1" tags="" position="7300,2900" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c21&#39;}
+
+Decides irrumpir en la trastienda dando una violenta patada a la fina puerta de madera que te separaba del extraño sujeto que emitía estos sonidos. Al entrar ves a un senil anciano con un artefacto etéreo de color rojo sombrío en las manos. Éste señor de aspecto demacrado con el pelo totalmente desaliñado y canoso, bueno, más qur canoso blanco, parece algo preocupado por lo que tiene entre las manos. 
+
+Tiene la mirada completamente ida, parece estar fuera de si, mientras no deja en ningún momento de mirar al cubo que tiene entre las manos a la vez que pronuncia o más bien balbucea unas extrañas frases en un idioma que sólo al escucharlo te parece más antiguo que la galaxia misma.
+
+
+[[Entrar en la trastienda para averiguar qué sucede.-&gt;Lycan-C-2-1-N]]</tw-passagedata><tw-passagedata pid="95" name="Lycan-C-2-1-N" tags="" position="7300,3125" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c21N&#39;}
+
+A medida que el anciano sigue balbuceando, éste empieza a hablar con sonidos impronunciables cada vez más rápido. Al son de ir subiendo el ritmo de lo que cada vez te va pareciendo más un tipo de ritual raro, ves como el cubo empieza a brillar y parpadear de color rojo al mismo ritmo que el habla del señor.
+
+Sin saber muy bien qué hacer te paras a mirar un segundo la sala de la trastienda, cuando te das cuenta ves que el anciano (y ahora tú también) os encontráis rodeados por un círculo hecho de un material blanco, casi cristalino, como si de esquirlas de gran tamaño de sal se trataran.
+
+Mientras observas la satánica sala, el rito sigue en proceso, el cubo sigue parpadeando en rojo cada vez más rápido, y empieza a salir de la parte superior de éste una especie de humo oscuro, hecho del mismo material sombrío que el cubo, como si éste se estuviera concentrando o inclusive canalizando. En apenas unos instantes, la sombría niebla empieza a tomar forma espectral, casi de humanoide pero de rasgos demoníacos y atrozes.
+
+Cuando consigues reaccionar en apenas unos instantes no se te ocurre otra genial idea que cortar el ritual tapándole la boca al sabio, para así cortar de raíz la invocación y con un poquito de suerte evitar que del cubo salga un horrible mal.
+
+Con tu diestra rapidez consigues taparle la boca al anciano en un parpadeo. Sus palabras cesan y el cubo se queda inmóvil durante unos instantes. Justo en ese momento sucede una reacción en cadena dentro del cubo a la que ninguno de los dos sois capaces de reaccionar. Una explosion de total oscuridad sale del cubo con lo que ambos sujetos salís disparados del círculo.
+
+(Nota del escritor: Imagínate la explosión de forma épica, como de película, a lo Sandman si la has visto, sino no tiene gracia).
+
+El anciano sale disparado hacia unos sacos de grano que había en la trastienda, aliviando así su impacto levemente. Sin embargo, tú sales disparado en dirección contraria, atravesando la débil puerta de madera que separa la biblioteca como tal de la trastienda. Pero no acaba aquí, una vez la atraviesas vas directo a petar en las estanterías de una de las paredes, dónde había una escala enorme de estantes llenos de libros antiguos posicionados ordenadamente. Dicho orden se vio destruido en apenas unos instantes cuando tú chocaste de lleno en el medio y toda la estantería de 5 metros que había y los consiguientes libros en ella se te vinieron de forma no irónica encima.
+
+
+
+[[Siguiente...-&gt;Lycan-C-2-1-N-N]]</tw-passagedata><tw-passagedata pid="96" name="Lycan-C-2-2-N" tags="" position="7700,3125" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c22N&#39;}
+
+Después de todo este berenjenal decides desentenderte totalmente de la situación, no quieres meterte en rollos turbios y decides mantenerte al margen. Procedes a irte a otra cosa mariposa. 
+
+**¿Qué haces ahora?**
+
+
+[[Preguntar por los alrededores de la vivienda del cliente si alguien sabe algo (de forma discreta y cautelosa).-&gt;Lycan-A]]
+
+
+[[Ir dando voces por la villa con la esperanza de que a alguien le suene (de forma indiscreta y llamando la atención a grito pelao’ como cualquier buen hijo de vecino).-&gt;Lycan-B]]</tw-passagedata><tw-passagedata pid="97" name="Lycan-C-2-1-N-N" tags="" position="7475,3400" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c21NN&#39;}
+
+Por suerte no acabaste del todo incapacitado, aparte de unas magulladuras y algún que otro bulto o chichón importante, no tienes nada que no se vaya a curar con un buen Paracetamol y mucha agua como se solía decir en algún universo paralelo.
+
+
+**Tras ésta prominente ecatombe de desafortunados acontecimientos, ¿Qué decides?**
+
+
+[[Ir a ver si el anciano senil está bien.-&gt;Lycan-C-2-1-N-N-1]]
+
+
+[[Salir de ahí cagando leches e ir a buscar otra fuente de información menos espeluznante que este antro.-&gt;Lycan-C-2-2-N]]
+</tw-passagedata><tw-passagedata pid="98" name="Lycan-C-2-1-N-N-1" tags="" position="7475,3600" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c21NN1&#39;}
+
+Vuelves, cojeando, a la trastienda. Esta vez no te hace falta abrir la puerta, porque ya no hay. Al volver a entrar ves cómo el pobre anciano está estampado contra una pared que afortunadamente estaba llena de paja. Se ha quemado gran parte de su vello facial, pero mientras se extinguen las últimas llamas de su prominente barba y bigotes se levanta lentamente. 
+
+El anciano tiene cara de MUY mala ostia, el señor sigue hablando en un idioma inexplicable, con sonidos y fonéticas similares al arameo antiguo. Se saca un libro de tapa verde oscura con tonalidades negras de algún lado y empieza a pronunciar unas palabras, esta vez te parece más un hechizo que una invocación. Pero para tu sorpresa, es un mix. En pocos segundos salen una especie de duendecillos verdes de una medida aproximada de media belga. Esas mini galletitas de jengibre verdes llevan gorros puntiagudos, ropajes totalmente de homeless y el elemento más importante, una navaja exageradamente afilada para ser del tamaño de un diente. 
+
+Empiezan a bailar, reír y gritar alrededor del viejo y, de repente, cuando el viejo cierra su puta bocaza de una vez, todos los duendecillos te miran al unísono con cara de muy mala ostia.
+
+
+
+[[Siguiente...-&gt;Lycan-C-2-1-N-N-1-N]]</tw-passagedata><tw-passagedata pid="99" name="Lycan-C-2-1-N-N-1-N" tags="" position="7475,3775" size="100,100">[JavaScript]
+stopAllEffects()
+[continued]
+
+{sound effect: &#39;lycan_c21NN1N&#39;}
+
+En ese preciso instante decides muy sabiamente que es hora de irse de allí. Así que procedes a salir corriendo del lugar, perseguido por una horda de, al menos, dos docenas de duendecillos, que se detienen en la entrada de la biblioteca cuando ya has salido, escupiendote y lanzandote desde la distancia sus propios excrementos que algunos de ellos acaban de generar.
+
+
+Sigues corriendo sin mirar atrás, cuando al girar una esquina chocas de frente con la coraza de placas de un soldado. Te llevas un buen golpe de narices de forma no irónica, y ves cómo una squad de 4 guardias te miran con cara no muy amigable.
+
+Te preguntan si estás bien y si necesitas algo.
+
+**¿Qué haces?**
+
+[[Les preguntas amablemente si conocen el escudo que hay bordado en el pañuelo.-&gt;Lycan-B-N-1]]
+
+[[Huyes (salir corriendo literalmente) utilitzando una técnica secreta familiar milenaria conocida como &quot;Nigerundayo&quot;-&gt;Lycan-B-N-2]]</tw-passagedata></tw-storydata><script>!function(){"use strict";var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};function t(e){if(e.__esModule)return e;var t=Object.defineProperty({},"__esModule",{value:!0});return Object.keys(e).forEach((function(n){var r=Object.getOwnPropertyDescriptor(e,n);Object.defineProperty(t,n,r.get?r:{enumerable:!0,get:function(){return e[n]}})})),t}var n="undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{};function r(){throw new Error("setTimeout has not been defined")}function o(){throw new Error("clearTimeout has not been defined")}var i=r,a=o;function s(e){if(i===setTimeout)return setTimeout(e,0);if((i===r||!i)&&setTimeout)return i=setTimeout,setTimeout(e,0);try{return i(e,0)}catch(t){try{return i.call(null,e,0)}catch(t){return i.call(this,e,0)}}}"function"==typeof n.setTimeout&&(i=setTimeout),"function"==typeof n.clearTimeout&&(a=clearTimeout);var c,l=[],u=!1,f=-1;function p(){u&&c&&(u=!1,c.length?l=c.concat(l):f=-1,l.length&&d())}function d(){if(!u){var e=s(p);u=!0;for(var t=l.length;t;){for(c=l,l=[];++f<t;)c&&c[f].run();f=-1,t=l.length}c=null,u=!1,function(e){if(a===clearTimeout)return clearTimeout(e);if((a===o||!a)&&clearTimeout)return a=clearTimeout,clearTimeout(e);try{a(e)}catch(t){try{return a.call(null,e)}catch(t){return a.call(this,e)}}}(e)}}function h(e,t){this.fun=e,this.array=t}h.prototype.run=function(){this.fun.apply(null,this.array)};function g(){}var m=g,b=g,v=g,y=g,w=g,k=g,x=g;var S=n.performance||{},_=S.now||S.mozNow||S.msNow||S.oNow||S.webkitNow||function(){return(new Date).getTime()};var E=new Date;var C={nextTick:function(e){var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)t[n-1]=arguments[n];l.push(new h(e,t)),1!==l.length||u||s(d)},title:"browser",browser:!0,env:{},argv:[],version:"",versions:{},on:m,addListener:b,once:v,off:y,removeListener:w,removeAllListeners:k,emit:x,binding:function(e){throw new Error("process.binding is not supported")},cwd:function(){return"/"},chdir:function(e){throw new Error("process.chdir is not supported")},umask:function(){return 0},hrtime:function(e){var t=.001*_.call(S),n=Math.floor(t),r=Math.floor(t%1*1e9);return e&&(n-=e[0],(r-=e[1])<0&&(n--,r+=1e9)),[n,r]},platform:"browser",release:{},config:{},uptime:function(){return(new Date-E)/1e3}};function A(e){return null!=e&&(!!e._isBuffer||O(e)||function(e){return"function"==typeof e.readFloatLE&&"function"==typeof e.slice&&O(e.slice(0,0))}(e))}function O(e){return!!e.constructor&&"function"==typeof e.constructor.isBuffer&&e.constructor.isBuffer(e)}void 0===n.TYPED_ARRAY_SUPPORT||n.TYPED_ARRAY_SUPPORT;var T="function"==typeof Object.create?function(e,t){e.super_=t,e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}})}:function(e,t){e.super_=t;var n=function(){};n.prototype=t.prototype,e.prototype=new n,e.prototype.constructor=e};function j(e,t){var n={seen:[],stylize:L};return arguments.length>=3&&(n.depth=arguments[2]),arguments.length>=4&&(n.colors=arguments[3]),I(t)?n.showHidden=t:t&&J(n,t),R(n.showHidden)&&(n.showHidden=!1),R(n.depth)&&(n.depth=2),R(n.colors)&&(n.colors=!1),R(n.customInspect)&&(n.customInspect=!0),n.colors&&(n.stylize=z),N(n,e,n.depth)}function z(e,t){var n=j.styles[t];return n?"["+j.colors[n][0]+"m"+e+"["+j.colors[n][1]+"m":e}function L(e,t){return e}function N(e,t,n){if(e.customInspect&&t&&H(t.inspect)&&t.inspect!==j&&(!t.constructor||t.constructor.prototype!==t)){var r=t.inspect(n,e);return q(r)||(r=N(e,r,n)),r}var o=function(e,t){if(R(t))return e.stylize("undefined","undefined");if(q(t)){var n="'"+JSON.stringify(t).replace(/^"|"$/g,"").replace(/'/g,"\\'").replace(/\\"/g,'"')+"'";return e.stylize(n,"string")}if(r=t,"number"==typeof r)return e.stylize(""+t,"number");var r;if(I(t))return e.stylize(""+t,"boolean");if(P(t))return e.stylize("null","null")}(e,t);if(o)return o;var i=Object.keys(t),a=function(e){var t={};return e.forEach((function(e,n){t[e]=!0})),t}(i);if(e.showHidden&&(i=Object.getOwnPropertyNames(t)),U(t)&&(i.indexOf("message")>=0||i.indexOf("description")>=0))return $(t);if(0===i.length){if(H(t)){var s=t.name?": "+t.name:"";return e.stylize("[Function"+s+"]","special")}if(M(t))return e.stylize(RegExp.prototype.toString.call(t),"regexp");if(B(t))return e.stylize(Date.prototype.toString.call(t),"date");if(U(t))return $(t)}var c,l,u="",f=!1,p=["{","}"];(c=t,Array.isArray(c)&&(f=!0,p=["[","]"]),H(t))&&(u=" [Function"+(t.name?": "+t.name:"")+"]");return M(t)&&(u=" "+RegExp.prototype.toString.call(t)),B(t)&&(u=" "+Date.prototype.toUTCString.call(t)),U(t)&&(u=" "+$(t)),0!==i.length||f&&0!=t.length?n<0?M(t)?e.stylize(RegExp.prototype.toString.call(t),"regexp"):e.stylize("[Object]","special"):(e.seen.push(t),l=f?function(e,t,n,r,o){for(var i=[],a=0,s=t.length;a<s;++a)G(t,String(a))?i.push(D(e,t,n,r,String(a),!0)):i.push("");return o.forEach((function(o){o.match(/^\d+$/)||i.push(D(e,t,n,r,o,!0))})),i}(e,t,n,a,i):i.map((function(r){return D(e,t,n,a,r,f)})),e.seen.pop(),function(e,t,n){if(e.reduce((function(e,t){return t.indexOf("\n"),e+t.replace(/\u001b\[\d\d?m/g,"").length+1}),0)>60)return n[0]+(""===t?"":t+"\n ")+" "+e.join(",\n  ")+" "+n[1];return n[0]+t+" "+e.join(", ")+" "+n[1]}(l,u,p)):p[0]+u+p[1]}function $(e){return"["+Error.prototype.toString.call(e)+"]"}function D(e,t,n,r,o,i){var a,s,c;if((c=Object.getOwnPropertyDescriptor(t,o)||{value:t[o]}).get?s=c.set?e.stylize("[Getter/Setter]","special"):e.stylize("[Getter]","special"):c.set&&(s=e.stylize("[Setter]","special")),G(r,o)||(a="["+o+"]"),s||(e.seen.indexOf(c.value)<0?(s=P(n)?N(e,c.value,null):N(e,c.value,n-1)).indexOf("\n")>-1&&(s=i?s.split("\n").map((function(e){return"  "+e})).join("\n").substr(2):"\n"+s.split("\n").map((function(e){return"   "+e})).join("\n")):s=e.stylize("[Circular]","special")),R(a)){if(i&&o.match(/^\d+$/))return s;(a=JSON.stringify(""+o)).match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)?(a=a.substr(1,a.length-2),a=e.stylize(a,"name")):(a=a.replace(/'/g,"\\'").replace(/\\"/g,'"').replace(/(^"|"$)/g,"'"),a=e.stylize(a,"string"))}return a+": "+s}function I(e){return"boolean"==typeof e}function P(e){return null===e}function q(e){return"string"==typeof e}function R(e){return void 0===e}function M(e){return F(e)&&"[object RegExp]"===W(e)}function F(e){return"object"==typeof e&&null!==e}function B(e){return F(e)&&"[object Date]"===W(e)}function U(e){return F(e)&&("[object Error]"===W(e)||e instanceof Error)}function H(e){return"function"==typeof e}function Z(e){return null===e||"boolean"==typeof e||"number"==typeof e||"string"==typeof e||"symbol"==typeof e||void 0===e}function W(e){return Object.prototype.toString.call(e)}function J(e,t){if(!t||!F(t))return e;for(var n=Object.keys(t),r=n.length;r--;)e[n[r]]=t[n[r]];return e}function G(e,t){return Object.prototype.hasOwnProperty.call(e,t)}function V(e,t){if(e===t)return 0;for(var n=e.length,r=t.length,o=0,i=Math.min(n,r);o<i;++o)if(e[o]!==t[o]){n=e[o],r=t[o];break}return n<r?-1:r<n?1:0}j.colors={bold:[1,22],italic:[3,23],underline:[4,24],inverse:[7,27],white:[37,39],grey:[90,39],black:[30,39],blue:[34,39],cyan:[36,39],green:[32,39],magenta:[35,39],red:[31,39],yellow:[33,39]},j.styles={special:"cyan",number:"yellow",boolean:"yellow",undefined:"grey",null:"bold",string:"green",date:"magenta",regexp:"red"};var Y,X=Object.prototype.hasOwnProperty,K=Object.keys||function(e){var t=[];for(var n in e)X.call(e,n)&&t.push(n);return t},Q=Array.prototype.slice;function ee(){return void 0!==Y?Y:Y="foo"===function(){}.name}function te(e){return Object.prototype.toString.call(e)}function ne(e){return!A(e)&&("function"==typeof n.ArrayBuffer&&("function"==typeof ArrayBuffer.isView?ArrayBuffer.isView(e):!!e&&(e instanceof DataView||!!(e.buffer&&e.buffer instanceof ArrayBuffer))))}function re(e,t){e||le(e,!0,t,"==",ue)}var oe=/\s*function\s+([^\(\s]*)\s*/;function ie(e){if(H(e)){if(ee())return e.name;var t=e.toString().match(oe);return t&&t[1]}}function ae(e){this.name="AssertionError",this.actual=e.actual,this.expected=e.expected,this.operator=e.operator,e.message?(this.message=e.message,this.generatedMessage=!1):(this.message=function(e){return se(ce(e.actual),128)+" "+e.operator+" "+se(ce(e.expected),128)}(this),this.generatedMessage=!0);var t=e.stackStartFunction||le;if(Error.captureStackTrace)Error.captureStackTrace(this,t);else{var n=new Error;if(n.stack){var r=n.stack,o=ie(t),i=r.indexOf("\n"+o);if(i>=0){var a=r.indexOf("\n",i+1);r=r.substring(a+1)}this.stack=r}}}function se(e,t){return"string"==typeof e?e.length<t?e:e.slice(0,t):e}function ce(e){if(ee()||!H(e))return j(e);var t=ie(e);return"[Function"+(t?": "+t:"")+"]"}function le(e,t,n,r,o){throw new ae({message:n,actual:e,expected:t,operator:r,stackStartFunction:o})}function ue(e,t){e||le(e,!0,t,"==",ue)}function fe(e,t,n){e!=t&&le(e,t,n,"==",fe)}function pe(e,t,n){e==t&&le(e,t,n,"!=",pe)}function de(e,t,n){ge(e,t,!1)||le(e,t,n,"deepEqual",de)}function he(e,t,n){ge(e,t,!0)||le(e,t,n,"deepStrictEqual",he)}function ge(e,t,n,r){if(e===t)return!0;if(A(e)&&A(t))return 0===V(e,t);if(B(e)&&B(t))return e.getTime()===t.getTime();if(M(e)&&M(t))return e.source===t.source&&e.global===t.global&&e.multiline===t.multiline&&e.lastIndex===t.lastIndex&&e.ignoreCase===t.ignoreCase;if(null!==e&&"object"==typeof e||null!==t&&"object"==typeof t){if(ne(e)&&ne(t)&&te(e)===te(t)&&!(e instanceof Float32Array||e instanceof Float64Array))return 0===V(new Uint8Array(e.buffer),new Uint8Array(t.buffer));if(A(e)!==A(t))return!1;var o=(r=r||{actual:[],expected:[]}).actual.indexOf(e);return-1!==o&&o===r.expected.indexOf(t)||(r.actual.push(e),r.expected.push(t),function(e,t,n,r){if(null==e||null==t)return!1;if(Z(e)||Z(t))return e===t;if(n&&Object.getPrototypeOf(e)!==Object.getPrototypeOf(t))return!1;var o=me(e),i=me(t);if(o&&!i||!o&&i)return!1;if(o)return ge(e=Q.call(e),t=Q.call(t),n);var a,s,c=K(e),l=K(t);if(c.length!==l.length)return!1;for(c.sort(),l.sort(),s=c.length-1;s>=0;s--)if(c[s]!==l[s])return!1;for(s=c.length-1;s>=0;s--)if(!ge(e[a=c[s]],t[a],n,r))return!1;return!0}(e,t,n,r))}return n?e===t:e==t}function me(e){return"[object Arguments]"==Object.prototype.toString.call(e)}function be(e,t,n){ge(e,t,!1)&&le(e,t,n,"notDeepEqual",be)}function ve(e,t,n){ge(e,t,!0)&&le(e,t,n,"notDeepStrictEqual",ve)}function ye(e,t,n){e!==t&&le(e,t,n,"===",ye)}function we(e,t,n){e===t&&le(e,t,n,"!==",we)}function ke(e,t){if(!e||!t)return!1;if("[object RegExp]"==Object.prototype.toString.call(t))return t.test(e);try{if(e instanceof t)return!0}catch(e){}return!Error.isPrototypeOf(t)&&!0===t.call({},e)}function xe(e,t,n,r){var o;if("function"!=typeof t)throw new TypeError('"block" argument must be a function');"string"==typeof n&&(r=n,n=null),o=function(e){var t;try{e()}catch(e){t=e}return t}(t),r=(n&&n.name?" ("+n.name+").":".")+(r?" "+r:"."),e&&!o&&le(o,n,"Missing expected exception"+r);var i="string"==typeof r,a=!e&&o&&!n;if((!e&&U(o)&&i&&ke(o,n)||a)&&le(o,n,"Got unwanted exception"+r),e&&o&&n&&!ke(o,n)||!e&&o)throw o}function Se(e,t,n){xe(!0,e,t,n)}function _e(e,t,n){xe(!1,e,t,n)}function Ee(e){if(e)throw e}re.AssertionError=ae,T(ae,Error),re.fail=le,re.ok=ue,re.equal=fe,re.notEqual=pe,re.deepEqual=de,re.deepStrictEqual=he,re.notDeepEqual=be,re.notDeepStrictEqual=ve,re.strictEqual=ye,re.notStrictEqual=we,re.throws=Se,re.doesNotThrow=_e,re.ifError=Ee;var Ce=t(Object.freeze({__proto__:null,default:re,AssertionError:ae,fail:le,ok:ue,assert:ue,equal:fe,notEqual:pe,deepEqual:de,deepStrictEqual:he,notDeepEqual:be,notDeepStrictEqual:ve,strictEqual:ye,notStrictEqual:we,throws:Se,doesNotThrow:_e,ifError:Ee})),Ae=Ce,Oe="undefined"!=typeof window;function Te(e){this.hasWindow=e,this.hasIdle=this.hasWindow&&window.requestIdleCallback,this.method=this.hasIdle?window.requestIdleCallback.bind(window):this.setTimeout,this.scheduled=!1,this.queue=[]}Te.prototype.push=function(e){Ae.equal(typeof e,"function","nanoscheduler.push: cb should be type function"),this.queue.push(e),this.schedule()},Te.prototype.schedule=function(){if(!this.scheduled){this.scheduled=!0;var e=this;this.method((function(t){for(;e.queue.length&&t.timeRemaining()>0;)e.queue.shift()(t);e.scheduled=!1,e.queue.length&&e.schedule()}))}},Te.prototype.setTimeout=function(e){setTimeout(e,0,{timeRemaining:function(){return 1}})};var je,ze=function(){var e;return Oe?(window._nanoScheduler||(window._nanoScheduler=new Te(!0)),e=window._nanoScheduler):e=new Te,e},Le=ze(),Ne=Ce;De.disabled=!0;try{je=window.performance,De.disabled="true"===window.localStorage.DISABLE_NANOTIMING||!je.mark}catch(e){}var $e=De;function De(e){if(Ne.equal(typeof e,"string","nanotiming: name should be type string"),De.disabled)return Ie;var t=(1e4*je.now()).toFixed()%Number.MAX_SAFE_INTEGER,n="start-"+t+"-"+e;function r(r){var o="end-"+t+"-"+e;je.mark(o),Le.push((function(){var i=null;try{var a=e+" ["+t+"]";je.measure(a,n,o),je.clearMarks(n),je.clearMarks(o)}catch(e){i=e}r&&r(i,e)}))}return je.mark(n),r.uuid=t,r}function Ie(e){e&&Le.push((function(){e(new Error("nanotiming: performance API unavailable"))}))}var Pe,qe=Ce;Re.disabled=!0;try{Pe=require("perf_hooks").performance,Re.disabled=C.env.DISABLE_NANOTIMING||!Pe.mark}catch(e){}function Re(e){if("undefined"!=typeof window)return $e(e);if(qe.equal(typeof e,"string","nanotiming: name should be type string"),Re.disabled)return Me;var t=(1e4*Pe.now()).toFixed()%Number.MAX_SAFE_INTEGER,n="start-"+t+"-"+e;function r(r){var o="end-"+t+"-"+e;Pe.mark(o);var i=null;try{var a=e+" ["+t+"]";Pe.measure(a,n,o),Pe.clearMarks(n),Pe.clearMarks(o)}catch(e){i=e}r&&r(i,e)}return Pe.mark(n),r.uuid=t,r}function Me(e){e&&e(new Error("nanotiming: performance API unavailable"))}var Fe=function(e,t,n){var r,o=e.length;if(!(t>=o||0===n)){var i=o-(n=t+n>o?o-t:n);for(r=t;r<i;++r)e[r]=e[r+n];e.length=i}},Be=Re,Ue=Ce,He=Ze;function Ze(e){if(!(this instanceof Ze))return new Ze(e);this._name=e||"nanobus",this._starListeners=[],this._listeners={}}Ze.prototype.emit=function(e){Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.emit: eventName should be type string or symbol");for(var t=[],n=1,r=arguments.length;n<r;n++)t.push(arguments[n]);var o=Be(this._name+"('"+e.toString()+"')"),i=this._listeners[e];return i&&i.length>0&&this._emit(this._listeners[e],t),this._starListeners.length>0&&this._emit(this._starListeners,e,t,o.uuid),o(),this},Ze.prototype.on=Ze.prototype.addListener=function(e,t){return Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.on: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.on: listener should be type function"),"*"===e?this._starListeners.push(t):(this._listeners[e]||(this._listeners[e]=[]),this._listeners[e].push(t)),this},Ze.prototype.prependListener=function(e,t){return Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.prependListener: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.prependListener: listener should be type function"),"*"===e?this._starListeners.unshift(t):(this._listeners[e]||(this._listeners[e]=[]),this._listeners[e].unshift(t)),this},Ze.prototype.once=function(e,t){Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.once: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.once: listener should be type function");var n=this;return this.on(e,(function r(){t.apply(n,arguments),n.removeListener(e,r)})),this},Ze.prototype.prependOnceListener=function(e,t){Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.prependOnceListener: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.prependOnceListener: listener should be type function");var n=this;return this.prependListener(e,(function r(){t.apply(n,arguments),n.removeListener(e,r)})),this},Ze.prototype.removeListener=function(e,t){return Ue.ok("string"==typeof e||"symbol"==typeof e,"nanobus.removeListener: eventName should be type string or symbol"),Ue.equal(typeof t,"function","nanobus.removeListener: listener should be type function"),"*"===e?(this._starListeners=this._starListeners.slice(),n(this._starListeners,t)):(void 0!==this._listeners[e]&&(this._listeners[e]=this._listeners[e].slice()),n(this._listeners[e],t));function n(e,t){if(e){var n=e.indexOf(t);return-1!==n?(Fe(e,n,1),!0):void 0}}},Ze.prototype.removeAllListeners=function(e){return e?"*"===e?this._starListeners=[]:this._listeners[e]=[]:(this._starListeners=[],this._listeners={}),this},Ze.prototype.listeners=function(e){var t="*"!==e?this._listeners[e]:this._starListeners,n=[];if(t)for(var r=t.length,o=0;o<r;o++)n.push(t[o]);return n},Ze.prototype._emit=function(e,t,n,r){if(void 0!==e&&0!==e.length){void 0===n&&(n=t,t=null),t&&(n=void 0!==r?[t].concat(n,r):[t].concat(n));for(var o=e.length,i=0;i<o;i++){var a=e[i];a.apply(a,n)}}};var We=He();function Je(e){return Je="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},Je(e)}function Ge(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function Ve(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function Ye(e,t,n){return t&&Ve(e.prototype,t),n&&Ve(e,n),Object.defineProperty(e,"prototype",{writable:!1}),e}function Xe(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,"prototype",{writable:!1}),t&&Qe(e,t)}function Ke(e){return Ke=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)},Ke(e)}function Qe(e,t){return Qe=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e},Qe(e,t)}function et(e,t){if(t&&("object"==typeof t||"function"==typeof t))return t;if(void 0!==t)throw new TypeError("Derived constructors may only return object or undefined");return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e)}function tt(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1;if(Reflect.construct.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=Ke(e);if(t){var o=Ke(this).constructor;n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments);return et(this,n)}}function nt(e,t){return function(e){if(Array.isArray(e))return e}(e)||function(e,t){var n=null==e?null:"undefined"!=typeof Symbol&&e[Symbol.iterator]||e["@@iterator"];if(null==n)return;var r,o,i=[],a=!0,s=!1;try{for(n=n.call(e);!(a=(r=n.next()).done)&&(i.push(r.value),!t||i.length!==t);a=!0);}catch(e){s=!0,o=e}finally{try{a||null==n.return||n.return()}finally{if(s)throw o}}return i}(e,t)||ot(e,t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}
 /*!
 	 * isobject <https://github.com/jonschlinkert/isobject>
 	 *
